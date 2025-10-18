@@ -40,7 +40,6 @@ Analyze Fitbit device usage data to identify user behavior patterns and apply th
 ```{r load-libraries, include=FALSE}
 library(tidyverse)
 library(lubridate)
-library(skimr)
 library(ggplot2)
 library(kableExtra)
 library(scales)

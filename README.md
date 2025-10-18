@@ -27,12 +27,25 @@ Analyze smart device usage data to gain insights into consumer behavior and info
 ## 📁 Project Structure
 - `bellabeat_analysis.Rmd` - Complete R Markdown analysis
 - `bellabeat_analysis.html` - Rendered HTML report
-- `data/` - Source dataset (if included)
+- `data/` - Source dataset
 
-## 🚀 How to Run
-1. Open `bellabeat_analysis.Rmd` in RStudio
-2. Install required packages: `tidyverse`, `ggplot2`, `kableExtra`
-3. Knit the document to generate HTML report
+## 🚀 How to Run This Analysis
+
+1. **Install R and RStudio** (if you haven't already)
+   - Download R from: https://cran.r-project.org/
+   - Download RStudio from: https://posit.co/download/rstudio-desktop/
+
+2. **Install Packages** (first time only)
+   - Open RStudio
+   - Copy and paste this into the console:
+   packages <- c("tidyverse", "ggplot2", "kableExtra", "lubridate", "scales")
+   install.packages(packages)
+
+3. **Load Analysis**
+    - Open bellabeat_analysis.Rmd
+    - Run All (Ctrl + Alt + R)
+    - To generate a report:
+        Knit the document to HTML, PDF or Word.
 
 ## 📈 Results
 The analysis provides actionable insights for increasing user engagement by 15-25% through targeted marketing strategies.
