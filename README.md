@@ -26,8 +26,12 @@ Analyze smart device usage data to gain insights into consumer behavior and info
 
 ## 📁 Project Structure
 - `bellabeat_analysis.Rmd` - Complete R Markdown analysis
-- `bellabeat_analysis.html` - Rendered HTML report
+- `index.html` - Rendered HTML report
 - `data/` - Source dataset
+
+## 🎯 Live Demo
+**View the full interactive HTML report:**  
+📊 [https://NicolayF.github.io/bellabeat-case-study](https://NicolayF.github.io/bellabeat-case-study)
 
 ## 🚀 How to Run This Analysis
 
