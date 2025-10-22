@@ -54,19 +54,17 @@ library(scales)
 
 ### **2.2 Dataset Characteristics**
 The dataset contains daily activity metrics from Fitbit users including steps, calories, activity minutes, and sedentary time.
-```{r}
+```{r load_data, echo=FALSE}
 # Load the dataset
 daily_activity <- read_csv("data/dailyActivity_merged.csv")
-
-# Explore initial structure
-glimpse(daily_activity)
 ```
 
 ```{r data-overview, echo=FALSE}
 cat("### Dataset Summary\n")
-cat("Number of unique users:", n_distinct(daily_activity$Id), "\n")
-cat("Data period: From", min(daily_activity$ActivityDate), "to", max(daily_activity$ActivityDate), "\n")
-cat("Total observations:", nrow(daily_activity), "\n")
+cat("• Number of unique users:", n_distinct(daily_activity$Id), "\n")
+cat("• Data period: From", min(daily_activity$ActivityDate), "to", max(daily_activity$ActivityDate), "\n")
+cat("• Total observations:", nrow(daily_activity), "daily records\n")
+cat("• Key metrics tracked: Steps, Calories, Activity Levels, Sedentary Time\n")
 ```
 ### **2.3 Data Quality Assessment (ROCCC)**
 - **Reliable**: ✓ Real user data
